@@ -4,19 +4,19 @@
 
 ### Backend
 
-**Database**: MYSQL
-**Server**: Node.js med Express.js
-**Auth**: JWT
-**ORM**: Sequelize
+- **Database**: MYSQL
+- **Server**: Node.js med Express.js
+- **Auth**: JWT
+- **ORM**: Sequelize
 
 ### Frontend
 
-**Rammeverk**: React
-**State management**: Redux
-**GUI**: Material-UI
-**Routing**: React Router
-**Formhåndtering**: Formik og Yup
-**Datovelger**: React Datepicker
+- **Rammeverk**: React
+- **State management**: Redux
+- **GUI**: Material-UI
+- **Routing**: React Router
+- **Formhåndtering**: Formik og Yup
+- **Datovelger**: React Datepicker
 
 ## Endepunkter
 
