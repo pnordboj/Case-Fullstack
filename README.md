@@ -1,5 +1,32 @@
 # Case Fullstack
 
+## Kjøre prosjetet
+
+### Backend
+
+- Sett opp en MYSQL server og lag en database med navn `hoteldb`.
+
+- Lag en bruker til MYSQL serveren og gi brukeren tilgang til databasen.
+
+- Deretter kjør følgende kommandoer i terminalen:
+
+```bash
+cd backend
+npm i
+node ./config/populateDb.js # Fyller databasen med testdata
+npm start # Eller node ./index.js
+```
+
+### Frontend
+
+- Kjør følgende kommandoer i terminalen:
+
+```bash
+cd frontend
+npm i
+npm start
+```
+
 ## Teknologi brukt i prosjektet
 
 ### Backend
