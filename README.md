@@ -2,16 +2,12 @@
 
 ## Teknologi brukt i prosjektet
 
-    **Hosting**: Cloudflare
-    **Database host**: Supabase
-
 ### Backend
 
-    **Database**: PostgreSQL
+    **Database**: MYSQL
     **Server**: Node.js med Express.js
-    **Testing**: Jest og Supertest
     **Auth**: JWT
-    **ORM**: Supabase
+    **ORM**: Sequelize
 
 ### Frontend
 
@@ -20,6 +16,7 @@
     **GUI**: Material-UI
     **Routing**: React Router
     **Formhåndtering**: Formik og Yup
+    **Datovelger**: React Datepicker
 
 ## Endepunkter
 

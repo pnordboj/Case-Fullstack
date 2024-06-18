@@ -1,7 +1,6 @@
 import { createTheme } from '@mui/material/styles';
-import { amber, blue, deepOrange, grey, indigo, pink } from '@mui/material/colors';
+import { grey, indigo, pink } from '@mui/material/colors';
 
-// Aldri laget en egen theme i MUI så får se om det her blir bra! :)
 const theme = createTheme({
     palette: {
         mode: 'light',

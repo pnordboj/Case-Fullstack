@@ -1,9 +1,9 @@
 import React from 'react';
-import { List, ListItem, ListItemText, Typography } from '@material-ui/core';
+import { List, ListItem, ListItemText, Typography } from '@mui/material';
 
-const AuditLog = ({ logs }) => (
+const AuditLogList = ({ logs }) => (
     <div>
-        <Typography variant="h4">Audit Logs</Typography>
+        <Typography variant="h4" gutterBottom align="center">Audit Logs</Typography>
         <List>
             {logs.map(log => (
                 <ListItem key={log.id}>
@@ -14,4 +14,4 @@ const AuditLog = ({ logs }) => (
     </div>
 );
 
-export default AuditLog;
+export default AuditLogList;

@@ -4,18 +4,18 @@ import { List, ListItem, ListItemText, Typography, Card, CardContent } from '@mu
 const RoomList = ({ rooms }) => (
     <div>
         <Typography variant="h4" gutterBottom>
-            Romoversikt
+            Rom Oversikt
         </Typography>
         <List>
-        {rooms.map(room => (
-            <Card key={room.id} variant="outlined" sx={{ mb: 2 }}>
-                <CardContent>
-                    <ListItem>
-                        <ListItemText primary={`Rom ${room.room_number}`} secondary={room.category} />
-                    </ListItem>
-                </CardContent>
-            </Card>
-        ))}
+            {rooms.map((room) => (
+                <Card key={room.id} variant="outlined" sx={{ mb: 2 }}>
+                    <CardContent>
+                        <ListItem>
+                            <ListItemText primary={`Room ${room.room_number}`} secondary={room.category} />
+                        </ListItem>
+                    </CardContent>
+                </Card>
+            ))}
         </List>
     </div>
 );

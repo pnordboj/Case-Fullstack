@@ -1,8 +1,5 @@
 const express = require('express');
-const {
-    getAllAuditLogs,
-    createAuditLog,
-} = require('../controllers/auditController');
+const { getAllAuditLogs, createAuditLog } = require('../controllers/auditController');
 
 const router = express.Router();
 
