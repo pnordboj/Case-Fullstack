@@ -7,6 +7,7 @@
 - **Database**: MYSQL
 - **Server**: Node.js med Express.js
 - **Auth**: JWT
+- **Kryptering**: BCrypt
 - **ORM**: Sequelize
 
 ### Frontend
