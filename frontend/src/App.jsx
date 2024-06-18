@@ -4,9 +4,15 @@ import { fetchRooms } from './redux/slices/roomSlice';
 import { fetchBookings } from './redux/slices/bookingSlice';
 import { fetchCustomers } from './redux/slices/customerSlice';
 import { fetchAuditLogs } from './redux/slices/auditLogSlice';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Rooms from './pages/Rooms';
+import Bookings from './pages/Bookings';
+import Customers from './pages/Customers';
+import AuditLogs from './pages/AuditLogs';
 
-function App({ children }) {
+function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -19,7 +25,13 @@ function App({ children }) {
     return (
         <div>
             <Navbar />
-            {children}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/rooms" element={<Rooms />} />
+                <Route path="/bookings" element={<Bookings />} />
+                <Route path="/customers" element={<Customers />} />
+                <Route path="/audit-logs" element={<AuditLogs />} />
+            </Routes>
         </div>
     );
 }

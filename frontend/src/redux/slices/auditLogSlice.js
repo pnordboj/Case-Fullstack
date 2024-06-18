@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import api from '../../api';
 
 export const fetchAuditLogs = createAsyncThunk('auditLogs/fetchAuditLogs', async () => {
-    const response = await axios.get('/api/audit-logs');
+    const response = await api.get('/audit-logs');
     return response.data;
 });
 

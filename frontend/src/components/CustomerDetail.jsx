@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Typography } from '@material-ui/core';
+import { Typography, Container } from '@mui/material';
+import api from '../api';
 
 const CustomerDetail = ({ match }) => {
     const [customer, setCustomer] = useState(null);
 
     useEffect(() => {
-        axios.get(`/api/customers/${match.params.id}`).then(response => setCustomer(response.data));
+        api.get(`/customers/${match.params.id}`).then(response => setCustomer(response.data));
     }, [match.params.id]);
 
-    if (!customer) return <div>Loading...</div>;
+    if (!customer) return <div>Laster...</div>;
 
     return (
-        <div>
+        <Container maxWidth="sm" sx={{ mt: 4 }}>
             <Typography variant="h4">{customer.name}</Typography>
-            <Typography variant="body1">Email: {customer.email}</Typography>
-            <Typography variant="body1">Loyalty Points: {customer.loyalty_points}</Typography>
-        </div>
+            <Typography variant="body1">Epost: {customer.email}</Typography>
+            <Typography variant="body1">Lojalitets poeng: {customer.loyalty_points}</Typography>
+        </Container>
     );
 };
 

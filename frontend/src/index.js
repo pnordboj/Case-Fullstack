@@ -11,12 +11,12 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <App />
-      </Router>
-    </ThemeProvider>
-  </Provider>
+  <Router>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+          <App />
+      </ThemeProvider>
+    </Provider>
+  </Router>
 );

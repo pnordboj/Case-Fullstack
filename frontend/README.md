@@ -7,5 +7,3 @@
 **GUI**: Material-UI
 **Routing**: React Router
 **Formhåndtering**: Formik og Yup
-
-## Komponenter
